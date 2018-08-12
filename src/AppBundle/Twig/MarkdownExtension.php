@@ -2,21 +2,17 @@
 
 namespace AppBundle\Twig;
 
-
 use AppBundle\Service\MarkdownTransformer;
 
 class MarkdownExtension extends \Twig_Extension
 {
-    /**
-     * @var MarkdownTransformer
-     */
     private $markdownTransformer;
 
     public function __construct(MarkdownTransformer $markdownTransformer)
     {
-
         $this->markdownTransformer = $markdownTransformer;
     }
+
     public function getFilters()
     {
         return [

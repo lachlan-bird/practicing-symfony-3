@@ -67,9 +67,8 @@ class GenusController extends Controller
             throw $this->createNotFoundException('genus not found');
         }
 
-        $transformer = $this->get('app.markdown_transformer');
-        $funFact = $transformer->parse($genus->getFunFact());
-
+        $markdownTransformer = $this->get('app.markdown_transformer');
+        $funFact = $markdownTransformer->parse($genus->getFunFact());
 
         $this->get('logger')
             ->info('Showing genus: '.$genusName);

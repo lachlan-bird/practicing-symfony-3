@@ -24,7 +24,6 @@ Make sure you have [Composer installed](https://getcomposer.org/download/)
 and then run:
 
 ```
-
 composer install
 ```
 
