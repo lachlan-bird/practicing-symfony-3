@@ -32,7 +32,7 @@ class User implements UserInterface
     /**
      * @ORM\Column(type="json_array")
      */
-    private $roles;
+    private $roles = [];
 
     private $plainPassword;
 
