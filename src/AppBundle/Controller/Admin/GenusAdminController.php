@@ -10,7 +10,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * @Security("is_granted('ROLE_ADMIN')")
+ * @Security("is_granted('ROLE_MANAGE_GENUS')")
  * @Route("/admin")
  */
 class GenusAdminController extends Controller
@@ -45,7 +45,10 @@ class GenusAdminController extends Controller
             $em->persist($genus);
             $em->flush();
 
-            $this->addFlash('success', 'Genus Created');
+            $this->addFlash(
+                'success',
+                "Genus created: thanks {$this->getUser()->getEmail()}!"
+            );
 
             return $this->redirectToRoute('admin_genus_list');
         }
@@ -71,7 +74,10 @@ class GenusAdminController extends Controller
             $em->persist($genus);
             $em->flush();
 
-            $this->addFlash('success', 'Genus Updated');
+            $this->addFlash(
+                'success',
+                "Genus Updated: thanks {$this->getUser()->getEmail()}!"
+            );
 
             return $this->redirectToRoute('admin_genus_list');
         }
