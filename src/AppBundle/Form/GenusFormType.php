@@ -10,7 +10,9 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\FormView;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\FormInterface;
 
 class GenusFormType extends AbstractType
 {
@@ -26,7 +28,9 @@ class GenusFormType extends AbstractType
                 }
             ])
             ->add('speciesCount')
-            ->add('funFact')
+            ->add('funFact', null, [
+                'help' => 'A fun fact about the genus'
+            ])
             ->add('isPublished', ChoiceType::class, [
                 'choices' => [
                     'Yes' => true,
