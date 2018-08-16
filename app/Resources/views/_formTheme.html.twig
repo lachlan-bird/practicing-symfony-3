@@ -5,6 +5,9 @@
     <div class="form-group cool-class{% if showErrorIcon %} has-error{% endif %}{{ showErrorIcon ? ' has-feedback' : '' }}">
         {{- form_label(form) -}}
         {{- form_widget(form) -}}
+        {% if help|default %}
+            <span class="help-block">{{ help }}</span>
+        {% endif %}
         {{- form_errors(form) -}}
     </div>
 {%- endblock form_row %}
