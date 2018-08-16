@@ -36,9 +36,9 @@ class GenusAdminController extends Controller
     {
         $form = $this->createForm(GenusFormType::class);
 
+        // only handles data on POST
         $form->handleRequest($request);
-
-        if($form->isSubmitted() && $form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) {
             $genus = $form->getData();
 
             $em = $this->getDoctrine()->getManager();
@@ -47,7 +47,7 @@ class GenusAdminController extends Controller
 
             $this->addFlash(
                 'success',
-                "Genus created: thanks {$this->getUser()->getEmail()}!"
+                sprintf('Genus created by you: %s!', $this->getUser()->getEmail())
             );
 
             return $this->redirectToRoute('admin_genus_list');
@@ -65,9 +65,9 @@ class GenusAdminController extends Controller
     {
         $form = $this->createForm(GenusFormType::class, $genus);
 
+        // only handles data on POST
         $form->handleRequest($request);
-
-        if($form->isSubmitted() && $form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) {
             $genus = $form->getData();
 
             $em = $this->getDoctrine()->getManager();
@@ -76,10 +76,17 @@ class GenusAdminController extends Controller
 
             $this->addFlash(
                 'success',
-                "Genus Updated: thanks {$this->getUser()->getEmail()}!"
+                $this->get('app.encouraging_message_generator')->getMessage()
             );
 
-            return $this->redirectToRoute('admin_genus_list');
+            return $this->redirectToRoute('admin_genus_edit', [
+                'id' => $genus->getId()
+            ]);
+        }  elseif ($form->isSubmitted()) {
+            $this->addFlash(
+                'error',
+                $this->get('app.discouraging_message_generator')->getMessage()
+            );
         }
 
         return $this->render('admin/genus/edit.html.twig', [

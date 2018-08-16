@@ -22,7 +22,6 @@
             <h1 class="logo">AquaNote</h1>
             <ul class="navi">
                 <li class="search"><a href="#" class="js-header-search-toggle"><i class="fa fa-search"></i></a></li>
-
                 {% if is_granted('ROLE_USER') %}
                     <li><a href="{{ path('security_logout') }}">Logout</a></li>
                 {% else %}
@@ -34,6 +33,11 @@
         <div class="main-content">
             {% for msg in app.session.flashBag.get('success') %}
                 <div class="alert alert-success">
+                    {{ msg }}
+                </div>
+            {% endfor %}
+            {% for msg in app.session.flashBag.get('error') %}
+                <div class="alert alert-danger">
                     {{ msg }}
                 </div>
             {% endfor %}

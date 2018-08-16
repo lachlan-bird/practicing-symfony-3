@@ -1,18 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: lachlan
- * Date: 12/8/18
- * Time: 9:46 PM
- */
 
 namespace AppBundle\Controller;
 
-
-use AppBundle\Form\LoginForm;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use AppBundle\Form\LoginForm;
 
 class SecurityController extends Controller
 {
@@ -22,6 +14,7 @@ class SecurityController extends Controller
     public function loginAction()
     {
         $authenticationUtils = $this->get('security.authentication_utils');
+
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
 
@@ -29,15 +22,16 @@ class SecurityController extends Controller
         $lastUsername = $authenticationUtils->getLastUsername();
 
         $form = $this->createForm(LoginForm::class, [
-           '_username' => $lastUsername
+            '_username' => $lastUsername,
         ]);
-
-
-
-        return $this->render('security/login.html.twig', array(
-            'form'  => $form->createView(),
-            'error'         => $error,
-        ));
+    
+        return $this->render(
+            'security/login.html.twig',
+            array(
+                'form' => $form->createView(),
+                'error' => $error,
+            )
+        );
     }
 
     /**
@@ -45,6 +39,6 @@ class SecurityController extends Controller
      */
     public function logoutAction()
     {
-        throw new \Exception('Should be handled elsewhere');
+        throw new \Exception('this should not be reached!');
     }
 }
