@@ -24,19 +24,3 @@ services:
         autowire: true
         tags:
             - { name: doctrine.event_subscriber }
-
-    app.form.help_form_extenion:
-        class: AppBundle\Form\TypeExtension\HelpFormExtension
-        autowire: true
-        tags:
-            - { name: form.type_extension, extended_type: Symfony\Component\Form\Extension\Core\Type\FormType }
-
-    app.encouraging_message_generator:
-        class: AppBundle\Service\MessageGenerator
-        arguments:
-            - ['You can do it!', 'Dude, sweet!', 'Woot!']
-
-    app.discouraging_message_generator:
-        class: AppBundle\Service\MessageGenerator
-        arguments:
-            - ['We are *never* going to figure this out', 'Why even try again?', 'Facepalm']

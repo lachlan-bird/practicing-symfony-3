@@ -2,20 +2,19 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
-use Symfony\Component\Security\Core\Role\Role;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * @ORM\Entity(repositoryClass="AppBundle\Repository\UserRepository")
+ * @ORM\Entity
  * @ORM\Table(name="user")
- * @UniqueEntity(fields={"email"}, message="It looks like you already have an account!")
+ * @UniqueEntity(fields={"email"}, message="Looks like you already have an account")
  */
 class User implements UserInterface
 {
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
@@ -31,19 +30,9 @@ class User implements UserInterface
     private $email;
 
     /**
-     * The encoded password
-     *
      * @ORM\Column(type="string")
      */
     private $password;
-
-    /**
-     * A non-persisted field that's used to create the encoded password.
-     * @Assert\NotBlank(groups={"Registration"})
-     *
-     * @var string
-     */
-    private $plainPassword;
 
     /**
      * @ORM\Column(type="json_array")
@@ -51,47 +40,10 @@ class User implements UserInterface
     private $roles = [];
 
     /**
-     * @ORM\Column(type="boolean")
+     * @Assert\NotBlank(groups={"Registration"})
      */
-    private $isScientist = false;
+    private $plainPassword;
 
-    /**
-     * @ORM\Column(type="string", nullable=true)
-     */
-    private $firstName;
-
-    /**
-     * @ORM\Column(type="string", nullable=true)
-     */
-    private $lastName;
-
-    /**
-     * @ORM\Column(type="string", nullable=true)
-     */
-    private $avatarUri;
-
-    /**
-     * @ORM\Column(type="string", nullable=true)
-     */
-    private $universityName;
-
-    /**
-     * @ORM\OneToMany(targetEntity="GenusScientist", mappedBy="user")
-     */
-    private $studiedGenuses;
-
-    public function __construct()
-    {
-        $this->studiedGenuses = new ArrayCollection();
-    }
-
-
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    // needed by the security system
     public function getUsername()
     {
         return $this->email;
@@ -101,17 +53,12 @@ class User implements UserInterface
     {
         $roles = $this->roles;
 
-        // give everyone ROLE_USER!
-        if (!in_array('ROLE_USER', $roles)) {
+        if(!in_array('ROLE_USER', $roles))
+        {
             $roles[] = 'ROLE_USER';
         }
 
         return $roles;
-    }
-
-    public function setRoles(array $roles)
-    {
-        $this->roles = $roles;
     }
 
     public function getPassword()
@@ -121,17 +68,11 @@ class User implements UserInterface
 
     public function getSalt()
     {
-        // leaving blank - I don't need/have a password!
     }
 
     public function eraseCredentials()
     {
         $this->plainPassword = null;
-    }
-
-    public function getEmail()
-    {
-        return $this->email;
     }
 
     public function setEmail($email)
@@ -144,79 +85,30 @@ class User implements UserInterface
         $this->password = $password;
     }
 
+    /**
+     * @return mixed
+     */
     public function getPlainPassword()
     {
         return $this->plainPassword;
     }
 
+    /**
+     * @param mixed $plainPassword
+     */
     public function setPlainPassword($plainPassword)
     {
         $this->plainPassword = $plainPassword;
-        // forces the object to look "dirty" to Doctrine. Avoids
-        // Doctrine *not* saving this entity, if only plainPassword changes
         $this->password = null;
     }
 
-    public function isScientist()
+    public function setRoles($roles)
     {
-        return $this->isScientist;
+        $this->roles = $roles;
     }
 
-    public function setIsScientist($isScientist)
+    public function getEmail()
     {
-        $this->isScientist = $isScientist;
-    }
-
-    public function getFirstName()
-    {
-        return $this->firstName;
-    }
-
-    public function setFirstName($firstName)
-    {
-        $this->firstName = $firstName;
-    }
-
-    public function getLastName()
-    {
-        return $this->lastName;
-    }
-
-    public function setLastName($lastName)
-    {
-        $this->lastName = $lastName;
-    }
-
-    public function getAvatarUri()
-    {
-        return $this->avatarUri;
-    }
-
-    public function setAvatarUri($avatarUri)
-    {
-        $this->avatarUri = $avatarUri;
-    }
-
-    public function getUniversityName()
-    {
-        return $this->universityName;
-    }
-
-    public function setUniversityName($universityName)
-    {
-        $this->universityName = $universityName;
-    }
-
-    public function getFullName()
-    {
-        return trim($this->getFirstName().' '.$this->getLastName());
-    }
-
-    /**
-     * @return ArrayCollection|GenusScientist[]
-     */
-    public function getStudiedGenuses()
-    {
-        return $this->studiedGenuses;
+        return $this->email;
     }
 }
