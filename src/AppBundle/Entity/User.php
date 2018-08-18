@@ -40,6 +40,11 @@ class User implements UserInterface
     private $roles = [];
 
     /**
+     * @ORM\Column(type="boolean")
+     */
+    private $isScientist = false;
+
+    /**
      * @Assert\NotBlank(groups={"Registration"})
      */
     private $plainPassword;
@@ -110,5 +115,21 @@ class User implements UserInterface
     public function getEmail()
     {
         return $this->email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIsScientiest()
+    {
+        return $this->isScientiest;
+    }
+
+    /**
+     * @param mixed $isScientiest
+     */
+    public function setIsScientiest($isScientiest)
+    {
+        $this->isScientiest = $isScientiest;
     }
 }

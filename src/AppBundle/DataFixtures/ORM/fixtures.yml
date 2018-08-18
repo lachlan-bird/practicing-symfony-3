@@ -26,3 +26,11 @@ AppBundle\Entity\User:
         email: lachlan.bird88+<current()>@gmail.com
         plainPassword: supersecretpassword
         roles: ['ROLE_ADMIN']
+    user.aquanaut_{1..10}:
+        email: aquanaut<current()>@example.org
+        plainPassword: aquanote
+        isScientist: true
+        firstName: <firstName()>
+        lastName: <lastName()>
+        universityName: <company()> University
+        avatarUri: <imageUrl(100, 100, 'abstract')>
