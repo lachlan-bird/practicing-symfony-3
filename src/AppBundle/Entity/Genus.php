@@ -189,11 +189,21 @@ class Genus
         }
 
         $this->genusScientists[] = $user;
+
+        // Keep relationship in sync
+        $user->addStudiedGenus($this);
     }
 
     public function removeGenusScientist(User $user)
     {
+        if(!$this->genusScientists->contains($user)) {
+            return;
+        }
+
         $this->genusScientists->removeElement($user);
+
+        // Keep relationship in sync
+        $user->removeStudiedGenus($this);
     }
 
     /**
