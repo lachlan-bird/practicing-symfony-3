@@ -69,6 +69,15 @@ class User implements UserInterface
      */
     private $plainPassword;
 
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+
     public function getUsername()
     {
         return $this->email;
@@ -191,6 +200,11 @@ class User implements UserInterface
     public function getLastName()
     {
         return $this->lastName;
+    }
+
+    public function getFullName()
+    {
+        return "{$this->firstName} {$this->lastName}";
     }
 
     /**
