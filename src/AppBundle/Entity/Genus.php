@@ -73,7 +73,8 @@ class Genus
      *     targetEntity="AppBundle\Entity\GenusScientist",
      *     mappedBy="genus",
      *     fetch="EXTRA_LAZY",
-     *     orphanRemoval=true
+     *     orphanRemoval=true,
+     *     cascade={"persist"}
      * )
      */
     private $genusScientists;
@@ -193,9 +194,8 @@ class Genus
         }
 
         $this->genusScientists[] = $genusScientist;
-
-        // Keep relationship in sync
         $genusScientist->setGenus($this);
+
     }
 
     public function removeGenusScientist(GenusScientist $genusScientist)

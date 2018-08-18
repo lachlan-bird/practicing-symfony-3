@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec46d3bc-595e-4d33-8b0c-747d85207ca1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/GenusScientist.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/GenusScientistEmbeddedForm.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/admin/genus/_form.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/admin/genus/_form.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/admin/genus/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/admin/genus/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/genus/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/genus/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/user/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/user/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/GenusController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/GenusController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/user/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/user/edit.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Genus.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Genus.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/GenusFormType.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/GenusFormType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/UserEditForm.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/UserEditForm.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +30,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="223">
               <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-              <folding />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,8 +52,8 @@
       <file leaf-file-name="_form.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/genus/_form.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="46" />
+            <state relative-caret-position="255">
+              <caret line="17" column="56" lean-forward="false" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -64,8 +62,8 @@
       <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/genus/edit.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="630">
+              <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding>
                 <element signature="e#12#44#0#Twig" expanded="true" />
               </folding>
@@ -76,8 +74,8 @@
       <file leaf-file-name="GenusFormType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/GenusFormType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="48" column="14" lean-forward="false" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+            <state relative-caret-position="388">
+              <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
               <folding>
                 <element signature="e#34#61#0#PHP" expanded="true" />
               </folding>
@@ -85,11 +83,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Genus.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Genus.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Genus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="75" column="29" lean-forward="false" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+            <state relative-caret-position="397">
+              <caret line="189" column="60" lean-forward="false" selection-start-line="189" selection-start-column="60" selection-end-line="189" selection-end-column="60" />
+              <folding>
+                <element signature="e#36#84#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserEditForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserEditForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+              <folding>
+                <element signature="e#34#61#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/user/edit.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="658">
+              <caret line="268" column="5" lean-forward="false" selection-start-line="268" selection-start-column="5" selection-end-line="268" selection-end-column="5" />
               <folding>
                 <element signature="e#36#84#0#PHP" expanded="true" />
               </folding>
@@ -103,43 +135,6 @@
             <state relative-caret-position="390">
               <caret line="26" column="86" lean-forward="false" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fixtures.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenusController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/GenusController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-              <folding>
-                <element signature="e#701#722#1#PHP" expanded="true" />
-                <element signature="e#1336#1352#1#PHP" expanded="true" />
-                <element signature="e#2021#2038#1#PHP" expanded="true" />
-                <element signature="e#2645#2666#1#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="272" column="54" lean-forward="false" selection-start-line="272" selection-start-column="54" selection-end-line="272" selection-end-column="54" />
-              <folding>
-                <element signature="e#36#84#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -195,20 +190,20 @@
         <option value="$PROJECT_DIR$/app/Resources/views/genus/list.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/GenusRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/user/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Form/UserEditForm.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/GenusScientist.php" />
         <option value="$PROJECT_DIR$/app/DoctrineMigrations/Version20180818092156.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/genus/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/GenusController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/fixtures.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/show.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/GenusScientistEmbeddedForm.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/GenusFormType.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/admin/genus/_form.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/admin/genus/edit.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Form/GenusFormType.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Genus.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/UserEditForm.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/user/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
       </list>
     </option>
   </component>
@@ -555,7 +550,7 @@
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="genus&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/Genus.php&#10;genusformt&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;genusformtype&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;edit.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/edit.html.twig&#10;admin/genu/fo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;genusform&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;user/show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/show.html.twig&#10;fixtures&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;genuscon&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;user&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;genus/show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;genuscontr&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;fixtu&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;user/edi&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/edit.html.twig&#10;usereditform&#9;null&#9;null&#10;userrepo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Repository/UserRepository.php&#10;genus/_for&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;genusrepo&#9;null&#9;null&#10;genus.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/Genus.php&#10;genus/l&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;genusc&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;user.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;show.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;list.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;list.html&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/list.html.twig&#10;genuscontrol&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/Admin/GenusAdminController.php&#10;config.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/config.yml&#10;config.yml&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/config.yml&#10;appkern&#9;null&#9;null&#10;services&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/services.yml&#10;_form.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;usercontr&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/UserController.php&#10;userre&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/UserRegistrationForm.php&#10;login.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/security/login.html.twig&#10;userc&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/UserController.php&#10;secur.y&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/security.yml&#10;security.t&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.th.xlf&#10;homepage&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/main/homepage.html.twig&#10;base.html&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/base.html.twig&#10;genusad&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/Admin/GenusAdminController.php&#10;entity/user&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;genusadmin&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/Admin/GenusAdminController.php&#10;security.yml&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/security.yml&#10;security.yaml&#9;null&#9;null&#10;loginformauth&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Security/LoginFormAuthenticator.php&#10;security.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/security.yml&#10;fixtures.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;services.yml&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/services.yml&#10;enti/user&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php" />
+    <property name="SearchEverywhereHistoryKey" value="user.ph&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;user/edit&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/edit.html.twig&#10;usereditfor&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/UserEditForm.php&#10;genus&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/Genus.php&#10;genusformt&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;genusformtype&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;edit.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/edit.html.twig&#10;admin/genu/fo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;genusform&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;user/show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/show.html.twig&#10;fixtures&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;genuscon&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;user&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;genus/show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;genuscontr&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;fixtu&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;user/edi&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/edit.html.twig&#10;usereditform&#9;null&#9;null&#10;userrepo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Repository/UserRepository.php&#10;genus/_for&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;genusrepo&#9;null&#9;null&#10;genus.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/Genus.php&#10;genus/l&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;genusc&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;user.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;show.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;list.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;list.html&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/list.html.twig&#10;genuscontrol&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/Admin/GenusAdminController.php&#10;config.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/config.yml&#10;config.yml&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/config.yml&#10;appkern&#9;null&#9;null&#10;services&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/services.yml&#10;_form.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;usercontr&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/UserController.php&#10;userre&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/UserRegistrationForm.php&#10;login.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/security/login.html.twig&#10;userc&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/UserController.php&#10;secur.y&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/security.yml&#10;security.t&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.th.xlf&#10;homepage&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/main/homepage.html.twig&#10;base.html&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/base.html.twig&#10;genusad&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/Admin/GenusAdminController.php&#10;entity/user&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;genusadmin&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/Admin/GenusAdminController.php&#10;security.yml&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/security.yml&#10;security.yaml&#9;null&#9;null&#10;loginformauth&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Security/LoginFormAuthenticator.php&#10;security.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/security.yml" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
@@ -657,7 +652,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26678000" />
+    <option name="totallyTimeSpent" value="27939000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -968,7 +963,7 @@
         <state relative-caret-position="331">
           <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
           <folding>
-            <element signature="e#2280#2308#0#PHP" expanded="true" />
+            <element signature="e#2280#2308#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1015,24 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/user/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="56" lean-forward="false" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserEditForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-          <folding>
-            <element signature="e#34#61#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/SubFamily.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1072,16 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="272" column="54" lean-forward="false" selection-start-line="272" selection-start-column="54" selection-end-line="272" selection-end-column="54" />
-          <folding>
-            <element signature="e#36#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/GenusController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
@@ -1107,7 +1074,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,38 +1098,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/genus/_form.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/genus/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <element signature="e#12#44#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/GenusFormType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="48" column="14" lean-forward="false" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+        <state relative-caret-position="388">
+          <caret line="39" column="33" lean-forward="false" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
           <folding>
             <element signature="e#34#61#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/genus/_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="56" lean-forward="false" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/genus/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+          <folding>
+            <element signature="e#12#44#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Genus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="75" column="29" lean-forward="false" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+        <state relative-caret-position="397">
+          <caret line="189" column="60" lean-forward="false" selection-start-line="189" selection-start-column="60" selection-end-line="189" selection-end-column="60" />
+          <folding>
+            <element signature="e#36#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserEditForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <folding>
+            <element signature="e#34#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/user/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="268" column="5" lean-forward="false" selection-start-line="268" selection-start-column="5" selection-end-line="268" selection-end-column="5" />
           <folding>
             <element signature="e#36#84#0#PHP" expanded="true" />
           </folding>
