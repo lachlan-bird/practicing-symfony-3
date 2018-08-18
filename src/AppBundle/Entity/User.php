@@ -72,8 +72,7 @@ class User implements UserInterface
     private $plainPassword;
 
     /**
-     * @ORM\ManyToMany(targetEntity="Genus", mappedBy="genusScientists")
-     * @ORM\OrderBy({"name"="ASC"})
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\GenusScientist", mappedBy="user")
      */
     private $studiedGenuses;
 
@@ -262,7 +261,7 @@ class User implements UserInterface
     }
 
     /**
-     * @return ArrayCollection|Genus[]
+     * @return ArrayCollection|GenusScientist[]
      */
     public function getStudiedGenuses()
     {

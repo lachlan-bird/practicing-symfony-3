@@ -4,6 +4,7 @@ namespace AppBundle\Controller;
 
 use AppBundle\Entity\Genus;
 use AppBundle\Entity\GenusNote;
+use AppBundle\Entity\GenusScientist;
 use AppBundle\Entity\User;
 use AppBundle\Service\MarkdownTransformer;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -40,11 +41,15 @@ class GenusController extends Controller
         $user = $em->getRepository('AppBundle:User')
             ->findOneBy(['email' => 'aquanaut1@example.org']);
 
-        $genus->addGenusScientist($user);
+        $genusScientist = new GenusScientist();
+        $genusScientist->setGenus($genus);
+        $genusScientist->setUser($user);
+        $genusScientist->setYearsStudied(10);
 
         $em = $this->getDoctrine()->getManager();
         $em->persist($genus);
         $em->persist($genusNote);
+        $em->persist($genusScientist);
         $em->flush();
 
         return new Response('<html><body>Genus created!</body></html>');
@@ -122,22 +127,17 @@ class GenusController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         /** @var Genus $genus */
-        $genus = $em->getRepository(Genus::class)
-            ->find($genusId);
-
-        if(!$genus)
-            throw $this->createNotFoundException('Genus not found');
-
-        /** @var User $user */
-        $genusScientist = $em->getRepository(User::class)
-            ->find($userId);
+        $genusScientist = $em->getRepository(GenusScientist::class)
+            ->findOneBy([
+                'user' => $userId,
+                'genus' => $genusId
+            ]);
 
         if(!$genusScientist)
-            throw $this->createNotFoundException('Genus scientist not found');
+            throw $this->createNotFoundException('Genus Scientist not found');
 
-        $genus->removeGenusScientist($genusScientist);
 
-        $em->persist($genus);
+        $em->remove($genusScientist);
         $em->flush();
 
         return new Response(null, 204);

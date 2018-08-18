@@ -69,8 +69,12 @@ class Genus
     private $notes;
 
     /**
-     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\User", inversedBy="studiedGenuses", fetch="EXTRA_LAZY")
-     * @ORM\JoinTable(name="genus_scientist")
+     * @ORM\OneToMany(
+     *     targetEntity="AppBundle\Entity\GenusScientist",
+     *     mappedBy="genus",
+     *     fetch="EXTRA_LAZY",
+     *     orphanRemoval=true
+     * )
      */
     private $genusScientists;
 
@@ -182,32 +186,32 @@ class Genus
         $this->slug = $slug;
     }
 
-    public function addGenusScientist(User $user)
+    public function addGenusScientist(GenusScientist $genusScientist)
     {
-        if($this->genusScientists->contains($user)) {
+        if($this->genusScientists->contains($genusScientist)) {
             return;
         }
 
-        $this->genusScientists[] = $user;
+        $this->genusScientists[] = $genusScientist;
 
         // Keep relationship in sync
-        $user->addStudiedGenus($this);
+        $genusScientist->setGenus($this);
     }
 
-    public function removeGenusScientist(User $user)
+    public function removeGenusScientist(GenusScientist $genusScientist)
     {
-        if(!$this->genusScientists->contains($user)) {
+        if(!$this->genusScientists->contains($genusScientist)) {
             return;
         }
 
-        $this->genusScientists->removeElement($user);
+        $this->genusScientists->removeElement($genusScientist);
 
         // Keep relationship in sync
-        $user->removeStudiedGenus($this);
+        $genusScientist->setGenus(null);
     }
 
     /**
-     * @return ArrayCollection|User[]
+     * @return ArrayCollection|GenusScientist[]
      */
     public function getGenusScientists()
     {
