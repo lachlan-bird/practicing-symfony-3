@@ -2,6 +2,7 @@
 
 namespace AppBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Doctrine\ORM\Mapping as ORM;
@@ -68,6 +69,18 @@ class User implements UserInterface
      * @Assert\NotBlank(groups={"Registration"})
      */
     private $plainPassword;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Genus", mappedBy="genusScientists")
+     * @ORM\OrderBy({"name"="ASC"})
+     */
+    private $studiedGenuses;
+
+    public function __construct()
+    {
+        $this->studiedGenuses = new ArrayCollection();
+    }
+
 
     /**
      * @return mixed
@@ -245,6 +258,14 @@ class User implements UserInterface
     public function setAvatarUri($avatarUri)
     {
         $this->avatarUri = $avatarUri;
+    }
+
+    /**
+     * @return ArrayCollection|Genus[]
+     */
+    public function getStudiedGenuses()
+    {
+        return $this->studiedGenuses;
     }
 
 }
