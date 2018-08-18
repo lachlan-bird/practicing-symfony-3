@@ -18,9 +18,15 @@ class GenusController extends Controller
      */
     public function newAction()
     {
+        $em = $this->getDoctrine()->getManager();
+
+        $subFamily = $em->getRepository('AppBundle:SubFamily')
+            ->findOneBy([]);
+
         $genus = new Genus();
         $genus->setName('Octopus'.rand(1, 100));
-        $genus->setSubFamily('Octopodinae');
+        $genus->setSubFamily($subFamily);
+        $genus->setFirstDiscoveredAt(new \DateTime());
         $genus->setSpeciesCount(rand(100, 99999));
 
         $genusNote = new GenusNote();
@@ -29,6 +35,11 @@ class GenusController extends Controller
         $genusNote->setNote('I counted 8 legs... as they wrapped around me');
         $genusNote->setCreatedAt(new \DateTime('-1 month'));
         $genusNote->setGenus($genus);
+
+        $user = $em->getRepository('AppBundle:User')
+            ->findOneBy(['email' => 'aquanaut1@example.org']);
+
+        $genus->addGenusScientist($user);
 
         $em = $this->getDoctrine()->getManager();
         $em->persist($genus);
