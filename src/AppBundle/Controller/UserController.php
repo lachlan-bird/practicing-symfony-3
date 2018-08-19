@@ -5,16 +5,21 @@ namespace AppBundle\Controller;
 use AppBundle\Entity\User;
 use AppBundle\Form\UserEditForm;
 use AppBundle\Form\UserRegistrationForm;
+use AppBundle\Security\LoginFormAuthenticator;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Security\Guard\GuardAuthenticatorHandler;
 
 class UserController extends Controller
 {
     /**
      * @Route("/register", name="user_register")
      */
-    public function registerAction(Request $request)
+    public function registerAction(Request $request,
+                                   LoginFormAuthenticator $loginFormAuthenticator,
+                                    GuardAuthenticatorHandler $authenticatorHandler
+    )
     {
         $form = $this->createForm(UserRegistrationForm::class);
 
@@ -28,11 +33,11 @@ class UserController extends Controller
 
             $this->addFlash('success', 'Welcome '.$user->getEmail());
 
-            return $this->get('security.authentication.guard_handler')
+            return $authenticatorHandler
                 ->authenticateUserAndHandleSuccess(
                     $user,
                     $request,
-                    $this->get('app.security.login_form_authenticator'),
+                    $loginFormAuthenticator,
                     'main'
                 );
         }
