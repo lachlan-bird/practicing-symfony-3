@@ -40,9 +40,10 @@
         "symfony/yaml": "^4.0"
     },
     "require-dev": {
-        "symfony/phpunit-bridge": "^4.0",
+        "doctrine/doctrine-fixtures-bundle": "^3.0",
+        "fzaninotto/faker": "^1.8",
         "symfony/dotenv": "^4.0",
-        "doctrine/doctrine-fixtures-bundle": "^2.3"
+        "symfony/phpunit-bridge": "^4.0"
     },
     "config": {
         "preferred-install": {
