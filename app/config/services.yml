@@ -10,12 +10,21 @@ services:
         autoconfigure: true
         public: false
 
+    # makes classes in src/AppBundle available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    AppBundle\:
+        resource: '../../src/AppBundle/*'
+        exclude: '../../src/AppBundle/{Entity,Repository}'
+
+    # controllers are imported separately to make sure they're public
+    # and have a tag that allows actions to type-hint services
+    AppBundle\Controller\:
+        resource: '../../src/AppBundle/Controller'
+        public: true
+        tags: ['controller.service_arguments']
+
     AppBundle\Service\MarkdownTransformer:
         arguments: ['@markdown.parser', '@doctrine_cache.providers.my_markdown_cache']
-
-    AppBundle\Twig\MarkdownExtension: ~
-
-    AppBundle\Security\LoginFormAuthenticator: ~
 
     AppBundle\Doctrine\HashPasswordListener:
         tags:
