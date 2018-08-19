@@ -8,6 +8,7 @@ services:
     _defaults:
         autowire: true
         autoconfigure: true
+        public: false
 
     AppBundle\Service\MarkdownTransformer:
         arguments: ['@markdown.parser', '@doctrine_cache.providers.my_markdown_cache']
