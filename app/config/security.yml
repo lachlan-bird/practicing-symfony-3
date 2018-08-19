@@ -27,6 +27,7 @@ security:
                 path: /logout
 
             switch_user: ~
+            logout_on_user_change: true
 
     access_control:
 #        - { path: ^/admin, roles: ROLE_ADMIN }
