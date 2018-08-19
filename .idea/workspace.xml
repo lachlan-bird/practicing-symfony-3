@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec46d3bc-595e-4d33-8b0c-747d85207ca1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/GenusAdminForm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/GenusScientistRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/admin/genus/_form.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/admin/genus/_form.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/admin/genus/edit.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/admin/genus/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/admin/genus/new.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/admin/genus/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Form/GenusScientistEmbeddedForm.php" afterPath="$PROJECT_DIR$/src/AppBundle/Form/GenusScientistEmbeddedForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/genus/list.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/genus/list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Genus.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Genus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/GenusScientist.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/GenusScientist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/GenusRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/GenusRepository.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,11 +35,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_form.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/genus/_form.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="62" lean-forward="false" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+            <state relative-caret-position="90">
+              <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -80,45 +80,33 @@
       <file leaf-file-name="Genus.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Genus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state relative-caret-position="628">
+              <caret line="225" column="101" lean-forward="false" selection-start-line="225" selection-start-column="101" selection-end-line="225" selection-end-column="101" />
               <folding>
-                <element signature="e#36#84#0#PHP" expanded="true" />
+                <element signature="e#36#86#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserEditForm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/UserEditForm.php">
+      <file leaf-file-name="GenusScientistRepository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/GenusScientistRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+              <folding>
+                <element signature="e#125#166#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/genus/list.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="35" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-              <folding>
-                <element signature="e#34#61#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/user/edit.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <caret line="23" column="69" lean-forward="false" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2787">
-              <caret line="268" column="5" lean-forward="false" selection-start-line="268" selection-start-column="5" selection-end-line="268" selection-end-column="5" />
-              <folding>
-                <element signature="e#36#84#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -126,10 +114,22 @@
       <file leaf-file-name="GenusScientist.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/GenusScientist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="376">
+              <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
               <folding>
                 <element signature="e#36#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenusRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/GenusRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="46" />
+              <folding>
+                <element signature="e#40#67#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -189,8 +189,6 @@
         <option value="$PROJECT_DIR$/var/cache/dev/appDevDebugProjectContainerUrlGenerator.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/admin/genus/list.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/genus/list.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/GenusRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php" />
         <option value="$PROJECT_DIR$/app/DoctrineMigrations/Version20180818092156.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/genus/show.html.twig" />
@@ -201,13 +199,16 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Form/UserEditForm.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/user/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Genus.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/GenusScientist.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/admin/genus/edit.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/admin/genus/new.html.twig" />
         <option value="$PROJECT_DIR$/web/js/GenusAdminForm.js" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/GenusScientistEmbeddedForm.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/admin/genus/_form.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/GenusScientist.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/GenusRepository.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/genus/list.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Genus.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/GenusScientistRepository.php" />
       </list>
     </option>
   </component>
@@ -390,6 +391,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony-learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="symfony-learning" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -538,7 +561,7 @@
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="genusscie&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusScientistEmbeddedForm.php&#10;genus/new&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/new.html.twig&#10;genuscie&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/GenusScientist.php&#10;genusscientist&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusScientistEmbeddedForm.php&#10;user.ph&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;user/edit&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/edit.html.twig&#10;usereditfor&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/UserEditForm.php&#10;genus&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/Genus.php&#10;genusformt&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;genusformtype&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;edit.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/edit.html.twig&#10;admin/genu/fo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;genusform&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;user/show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/show.html.twig&#10;fixtures&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;genuscon&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;user&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;genus/show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;genuscontr&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;fixtu&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;user/edi&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/edit.html.twig&#10;usereditform&#9;null&#9;null&#10;userrepo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Repository/UserRepository.php&#10;genus/_for&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;genusrepo&#9;null&#9;null&#10;genus.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/Genus.php&#10;genus/l&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;genusc&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;user.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;show.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;list.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;list.html&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/list.html.twig&#10;genuscontrol&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/Admin/GenusAdminController.php&#10;config.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/config.yml&#10;config.yml&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/config.yml&#10;appkern&#9;null&#9;null&#10;services&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/services.yml&#10;_form.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;usercontr&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/UserController.php&#10;userre&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/UserRegistrationForm.php&#10;login.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/security/login.html.twig&#10;userc&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/UserController.php&#10;secur.y&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/security.yml&#10;security.t&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.th.xlf&#10;homepage&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/main/homepage.html.twig&#10;base.html&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/base.html.twig&#10;genusad&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/Admin/GenusAdminController.php&#10;entity/user&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;genusadmin&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/Admin/GenusAdminController.php" />
+    <property name="SearchEverywhereHistoryKey" value="genus/list&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;genus&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/Genus.php&#10;genusreposi&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Repository/GenusRepository.php&#10;genusscien&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/GenusScientist.php&#10;genusscie&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusScientistEmbeddedForm.php&#10;genus/new&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/new.html.twig&#10;genuscie&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/GenusScientist.php&#10;genusscientist&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusScientistEmbeddedForm.php&#10;user.ph&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;user/edit&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/edit.html.twig&#10;usereditfor&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/UserEditForm.php&#10;genusformt&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;genusformtype&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;edit.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/edit.html.twig&#10;admin/genu/fo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;genusform&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;user/show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/show.html.twig&#10;fixtures&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;genuscon&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;user&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;genus/show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;genuscontr&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;fixtu&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;user/edi&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/edit.html.twig&#10;usereditform&#9;null&#9;null&#10;userrepo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Repository/UserRepository.php&#10;genus/_for&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;genusrepo&#9;null&#9;null&#10;genus.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/Genus.php&#10;genus/l&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;genusc&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;user.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;show.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;list.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;list.html&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/list.html.twig&#10;genuscontrol&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/Admin/GenusAdminController.php&#10;config.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/config.yml&#10;config.yml&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/config.yml&#10;appkern&#9;null&#9;null&#10;services&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/services.yml&#10;_form.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;usercontr&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/UserController.php&#10;userre&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/UserRegistrationForm.php&#10;login.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/security/login.html.twig&#10;userc&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/UserController.php&#10;secur.y&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/security.yml&#10;security.t&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.th.xlf&#10;homepage&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/main/homepage.html.twig&#10;base.html&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/base.html.twig" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
@@ -640,7 +663,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29092000" />
+    <option name="totallyTimeSpent" value="29755000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -696,16 +719,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/MarkdownTransformer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#37#69#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -948,24 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/genus/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/GenusRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/UserRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1090,26 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Genus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding>
-            <element signature="e#36#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/GenusScientist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="e#36#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/genus/new.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1148,9 +1123,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/genus/_form.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="62" lean-forward="false" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+        <state relative-caret-position="90">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/GenusScientist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding>
+            <element signature="e#36#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/genus/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="69" lean-forward="false" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/GenusRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="46" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="46" />
+          <folding>
+            <element signature="e#40#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Genus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="225" column="101" lean-forward="false" selection-start-line="225" selection-start-column="101" selection-end-line="225" selection-end-column="101" />
+          <folding>
+            <element signature="e#36#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/GenusScientistRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="e#125#166#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
