@@ -20,7 +20,7 @@ services:
     # this creates a service per class whose id is the fully-qualified class name
     App\:
         resource: '../src/*'
-        exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php,AppBundle}'
+        exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
@@ -28,28 +28,16 @@ services:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
 
-    ## REMOVE LATER
-    AppBundle\:
-        resource: '../src/AppBundle/*'
-        exclude: '../src/AppBundle/{Entity,Repository}'
-
-    # controllers are imported separately to make sure they're public
-    # and have a tag that allows actions to type-hint services
-    AppBundle\Controller\:
-        resource: '../src/AppBundle/Controller'
-        public: true
-        tags: ['controller.service_arguments']
-
     Knp\Bundle\MarkdownBundle\MarkdownParserInterface: '@markdown.parser.min'
 
-    AppBundle\Service\MarkdownTransformer:
+    App\Service\MarkdownTransformer:
         arguments:
             $cache: '@doctrine_cache.providers.my_markdown_cache'
 
-    AppBundle\Doctrine\HashPasswordListener:
+    App\Doctrine\HashPasswordListener:
         tags:
             - { name: doctrine.event_subscriber }
 
-    AppBundle\Form\TypeExtension\HelpFormExtension:
+    App\Form\TypeExtension\HelpFormExtension:
         tags:
             - { name: form.type_extension, extended_type: 'Symfony\Component\Form\Extension\Core\Type\FormType'}
