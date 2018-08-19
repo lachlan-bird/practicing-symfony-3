@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec46d3bc-595e-4d33-8b0c-747d85207ca1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config/legacy_aliases.yml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/GenusController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/GenusController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Doctrine/HashPasswordListener.php" afterPath="$PROJECT_DIR$/src/AppBundle/Doctrine/HashPasswordListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Security/LoginFormAuthenticator.php" afterPath="$PROJECT_DIR$/src/AppBundle/Security/LoginFormAuthenticator.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,18 +20,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Genus.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Genus.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="225" column="101" lean-forward="false" selection-start-line="225" selection-start-column="101" selection-end-line="225" selection-end-column="101" />
-              <folding>
-                <element signature="e#36#86#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GenusScientistRepository.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/GenusScientistRepository.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -80,20 +65,44 @@
       <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/services.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="480">
+              <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
               <folding>
-                <marker date="1534643090202" expanded="true" signature="40:818" ph="services: &lt;2 keys&gt;" />
+                <marker date="1534643390466" expanded="true" signature="40:881" ph="services: &lt;2 keys&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenusController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HashPasswordListener.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Doctrine/HashPasswordListener.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+              <folding>
+                <element signature="e#121#147#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginFormAuthenticator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Security/LoginFormAuthenticator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+              <folding>
+                <element signature="e#121#147#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenusController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/GenusController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="77" column="49" lean-forward="false" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="49" />
+            <state relative-caret-position="309">
+              <caret line="57" column="7" lean-forward="false" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
               <folding>
                 <element signature="e#701#722#1#PHP" expanded="true" />
                 <element signature="e#1336#1352#1#PHP" expanded="true" />
@@ -104,7 +113,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="security.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -164,8 +173,6 @@
         <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Doctrine/HashPasswordListener.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Security/LoginFormAuthenticator.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/main/homepage.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/Admin/GenusAdminController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/security/login.html.twig" />
@@ -200,8 +207,10 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/config/legacy_aliases.yml" />
-        <option value="$PROJECT_DIR$/app/config/services.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/GenusController.php" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Doctrine/HashPasswordListener.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Security/LoginFormAuthenticator.php" />
       </list>
     </option>
   </component>
@@ -558,7 +567,7 @@
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="security.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/security.yml&#10;usercontroller&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/UserController.php&#10;genuscontroller&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;services.y&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/services.yml&#10;appkernel&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/AppKernel.php&#10;config.yml&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/config.yml&#10;compose.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/composer.json&#10;genus/list&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;genus&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/Genus.php&#10;genusreposi&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Repository/GenusRepository.php&#10;genusscien&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/GenusScientist.php&#10;genusscie&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusScientistEmbeddedForm.php&#10;genus/new&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/new.html.twig&#10;genuscie&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/GenusScientist.php&#10;genusscientist&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusScientistEmbeddedForm.php&#10;user.ph&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;user/edit&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/edit.html.twig&#10;usereditfor&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/UserEditForm.php&#10;genusformt&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;genusformtype&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;edit.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/edit.html.twig&#10;admin/genu/fo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;genusform&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;user/show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/show.html.twig&#10;fixtures&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;genuscon&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;user&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;genus/show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;genuscontr&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;fixtu&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;user/edi&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/edit.html.twig&#10;usereditform&#9;null&#9;null&#10;userrepo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Repository/UserRepository.php&#10;genus/_for&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;genusrepo&#9;null&#9;null&#10;genus.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/Genus.php&#10;genus/l&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;genusc&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;user.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;show.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;list.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;list.html&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/list.html.twig&#10;genuscontrol&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/Admin/GenusAdminController.php&#10;config.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/config.yml&#10;appkern&#9;null&#9;null&#10;services&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/services.yml&#10;_form.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;usercontr&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/UserController.php&#10;userre&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/UserRegistrationForm.php" />
+    <property name="SearchEverywhereHistoryKey" value="security&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/security.yml&#10;loginforauthe&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Security/LoginFormAuthenticator.php&#10;haspasswo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Doctrine/HashPasswordListener.php&#10;security.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/security.yml&#10;usercontroller&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/UserController.php&#10;genuscontroller&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;services.y&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/services.yml&#10;appkernel&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/AppKernel.php&#10;config.yml&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/config.yml&#10;compose.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/composer.json&#10;genus/list&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;genus&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/Genus.php&#10;genusreposi&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Repository/GenusRepository.php&#10;genusscien&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/GenusScientist.php&#10;genusscie&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusScientistEmbeddedForm.php&#10;genus/new&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/new.html.twig&#10;genuscie&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/GenusScientist.php&#10;genusscientist&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusScientistEmbeddedForm.php&#10;user.ph&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;user/edit&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/edit.html.twig&#10;usereditfor&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/UserEditForm.php&#10;genusformt&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;genusformtype&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;edit.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/edit.html.twig&#10;admin/genu/fo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;genusform&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Form/GenusFormType.php&#10;user/show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/show.html.twig&#10;fixtures&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;genuscon&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;user&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;genus/show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;genuscontr&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;fixtu&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/DataFixtures/ORM/fixtures.yml&#10;user/edi&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/user/edit.html.twig&#10;usereditform&#9;null&#9;null&#10;userrepo&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Repository/UserRepository.php&#10;genus/_for&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/_form.html.twig&#10;genusrepo&#9;null&#9;null&#10;genus.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/Genus.php&#10;genus/l&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;genusc&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/GenusController.php&#10;show&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;user.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Entity/User.php&#10;show.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/show.html.twig&#10;list.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/genus/list.html.twig&#10;list.html&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/Resources/views/admin/genus/list.html.twig&#10;genuscontrol&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/src/AppBundle/Controller/Admin/GenusAdminController.php&#10;config.&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/config.yml&#10;appkern&#9;null&#9;null&#10;services&#9;FILE&#9;file:///Users/lachlan/Projects/symfony-learning/app/config/services.yml" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
@@ -660,7 +669,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32190000" />
+    <option name="totallyTimeSpent" value="32511000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -683,7 +692,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17142858" sideWeight="0.497558" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2387755" sideWeight="0.497558" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -755,26 +764,6 @@
         <state relative-caret-position="533">
           <caret line="44" column="7" lean-forward="false" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Doctrine/HashPasswordListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#121#147#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Security/LoginFormAuthenticator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="93" column="29" lean-forward="false" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
-          <folding>
-            <element signature="e#121#147#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1133,16 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-          <folding>
-            <marker date="1534643041470" expanded="true" signature="113:260" ph="security: &lt;5 keys&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/legacy_aliases.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1151,25 +1130,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <marker date="1534643090202" expanded="true" signature="40:818" ph="services: &lt;2 keys&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/GenusController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="77" column="49" lean-forward="false" selection-start-line="77" selection-start-column="49" selection-end-line="77" selection-end-column="49" />
+        <state relative-caret-position="309">
+          <caret line="57" column="7" lean-forward="false" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
           <folding>
             <element signature="e#701#722#1#PHP" expanded="true" />
             <element signature="e#1336#1352#1#PHP" expanded="true" />
             <element signature="e#2021#2038#1#PHP" expanded="true" />
             <element signature="e#2615#2636#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding>
+            <marker date="1534643390466" expanded="true" signature="40:881" ph="services: &lt;2 keys&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Doctrine/HashPasswordListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#121#147#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Security/LoginFormAuthenticator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#121#147#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+          <folding>
+            <marker date="1534643041470" expanded="true" signature="113:260" ph="security: &lt;5 keys&gt;" />
           </folding>
         </state>
       </provider>

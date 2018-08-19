@@ -20,8 +20,10 @@ services:
         public: true
         tags: ['controller.service_arguments']
 
+    Knp\Bundle\MarkdownBundle\MarkdownParserInterface: '@markdown.parser.min'
+
     AppBundle\Service\MarkdownTransformer:
-        arguments: ['@markdown.parser', '@doctrine_cache.providers.my_markdown_cache']
+        arguments: ['', '@doctrine_cache.providers.my_markdown_cache']
 
     AppBundle\Doctrine\HashPasswordListener:
         tags:
