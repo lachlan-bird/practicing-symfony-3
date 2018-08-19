@@ -7,6 +7,11 @@ use App\Entity\GenusNote;
 use App\Entity\GenusScientist;
 use App\Entity\SubFamily;
 use App\Entity\User;
+use App\Repository\GenusNoteRepository;
+use App\Repository\GenusRepository;
+use App\Repository\GenusScientistRepository;
+use App\Repository\SubFamilyRepository;
+use App\Repository\UserRepository;
 use App\Service\MarkdownTransformer;
 use Psr\Log\LoggerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -20,11 +25,11 @@ class GenusController extends Controller
     /**
      * @Route("/genus/new")
      */
-    public function newAction()
+    public function newAction(SubFamilyRepository $subFamilyRepository, UserRepository $userRepository)
     {
         $em = $this->getDoctrine()->getManager();
 
-        $subFamily = $em->getRepository(SubFamily::class)
+        $subFamily = $subFamilyRepository
             ->findOneBy([]);
 
         $genus = new Genus();
@@ -40,7 +45,7 @@ class GenusController extends Controller
         $genusNote->setCreatedAt(new \DateTime('-1 month'));
         $genusNote->setGenus($genus);
 
-        $user = $em->getRepository(User::class)
+        $user = $userRepository
             ->findOneBy(['email' => 'aquanaut1@example.org']);
 
         $genusScientist = new GenusScientist();
@@ -60,12 +65,9 @@ class GenusController extends Controller
     /**
      * @Route("/genus")
      */
-    public function listAction()
+    public function listAction(GenusRepository $repository)
     {
-        $em = $this->getDoctrine()->getManager();
-
-        $genuses = $em->getRepository(Genus::class)
-            ->findAllPublishedOrderedByRecentlyActive();
+        $genuses = $repository->findAllPublishedOrderedByRecentlyActive();
 
         return $this->render('genus/list.html.twig', [
             'genuses' => $genuses
@@ -75,15 +77,17 @@ class GenusController extends Controller
     /**
      * @Route("/genus/{slug}", name="genus_show")
      */
-    public function showAction(Genus $genus, MarkdownTransformer $markdownTransformer, LoggerInterface $logger)
+    public function showAction(Genus $genus,
+                               MarkdownTransformer $markdownTransformer,
+                               LoggerInterface $logger,
+                               GenusNoteRepository $genusNoteRepository
+    )
     {
-        $em = $this->getDoctrine()->getManager();
         $funFact = $markdownTransformer->parse($genus->getFunFact());
 
         $logger->info('Showing genus: '.$genus->getName());
 
-        $recentNotes = $em->getRepository(GenusNote::class)
-            ->findAllRecentNotesForGenus($genus);
+        $recentNotes = $genusNoteRepository->findAllRecentNotesForGenus($genus);
 
         return $this->render('genus/show.html.twig', array(
             'genus' => $genus,
@@ -121,12 +125,12 @@ class GenusController extends Controller
      * @Route("/genus/{genusId}/scientist/{userId}", name="genus_scientist_remove")
      * @Method("DELETE")
      */
-    public function removeGenusScientistAction($genusId, $userId)
+    public function removeGenusScientistAction($genusId, $userId, GenusScientistRepository $genusScientistRepository)
     {
         $em = $this->getDoctrine()->getManager();
 
         /** @var Genus $genus */
-        $genusScientist = $em->getRepository(GenusScientist::class)
+        $genusScientist = $genusScientistRepository
             ->findOneBy([
                 'user' => $userId,
                 'genus' => $genusId

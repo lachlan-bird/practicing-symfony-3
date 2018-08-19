@@ -9,11 +9,18 @@
 namespace App\Repository;
 
 
+use App\Entity\GenusScientist;
+use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Collections\Criteria;
-use Doctrine\ORM\EntityRepository;
+use Doctrine\Common\Persistence\ManagerRegistry;
 
-class GenusScientistRepository extends EntityRepository
+class GenusScientistRepository extends ServiceEntityRepository
 {
+    public function __construct(ManagerRegistry $registry)
+    {
+        parent::__construct($registry, GenusScientist::class);
+    }
+
     static public function createExpertCriteria()
     {
         return $criteria = Criteria::create()

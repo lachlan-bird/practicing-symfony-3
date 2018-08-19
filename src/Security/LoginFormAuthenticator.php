@@ -10,6 +10,7 @@ namespace App\Security;
 
 use App\Entity\User;
 use App\Form\LoginForm;
+use App\Repository\UserRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -29,21 +30,21 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator
     use TargetPathTrait;
 
     private $formFactory;
-    private $em;
     private $router;
     private $passwordEncoder;
+    private $userRepository;
 
     public function __construct(FormFactoryInterface $formFactory,
-                                EntityManagerInterface $em,
                                 RouterInterface $router,
-                                UserPasswordEncoderInterface $passwordEncoder
+                                UserPasswordEncoderInterface $passwordEncoder,
+                                UserRepository $userRepository
     )
     {
 
         $this->formFactory = $formFactory;
-        $this->em = $em;
         $this->router = $router;
         $this->passwordEncoder = $passwordEncoder;
+        $this->userRepository = $userRepository;
     }
 
     public function supports(Request $request)
@@ -87,7 +88,7 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator
     {
         $username = $credentials['_username'];
 
-        return $this->em->getRepository(User::class)
+        return $this->userRepository
             ->findOneBy(['email' => $username]);
     }
 
